@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class Account {
     private double balance;
@@ -14,8 +15,9 @@ public class Account {
         this.priority = priority;
         this.isMetal = isMetal;
     }
-public String toString(){
-        return "Account number " + number + " balance " + balance + " currency " + isoCode +"-"+ priority + " Metal " + isMetal;
-}
+
+    public String toString() {
+        return "Account number " + number + " balance " + balance + " currency " + isoCode + "-" + priority + " Metal " + isMetal;
+    }
 
 }
