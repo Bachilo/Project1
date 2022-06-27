@@ -7,6 +7,10 @@ public class Main {
         User user11 = new User();
         user11.less();
 
+        User greg = new User();
+        greg.get();
+        System.out.println(greg.getNumber());
+
     }
 
 }

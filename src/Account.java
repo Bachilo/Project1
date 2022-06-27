@@ -17,7 +17,7 @@ public class Account {
     }
 
     public String toString() {
-        return "Account number " + number + " balance " + balance + " currency " + isoCode + "-" + priority + " Metal " + isMetal;
+        return "Account number " + number + " balance " + balance + " currency " + isoCode + "-" + priority;
     }
 
 }
