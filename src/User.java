@@ -104,6 +104,13 @@ public class User {
 
     }
 
+    public void less(){
+
+        User user11 = DataService.UserFromData().get(10);
+        System.out.println(user11);
+    }
+
+
     public String toString() {
 
         return "Id: " + id + " Name: " + FirstName + " " + MiddleName + " " + LastName + " Registration date: " + date + " Status: " + status + " Password: " + password + number;

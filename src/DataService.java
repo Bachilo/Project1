@@ -3,7 +3,7 @@ import com.sun.source.tree.UsesTree;
 import java.util.List;
 
 public class DataService {
-    public List<User> UserFromData() {
+    public static List<User> UserFromData() {
         return List.of(new User(11131L, "Кирилл", "Бачило", "Вячеславович", "01.01.2001", Status.FIZ, "asdqwe8216wery725834", List.of(1, 2, 3, 1, 2, 3, 1),
                         List.of(new Account(227934, 2267.15, "RUB", 1, false), new Account(115823, 3937.23, "USD", 2, false), new Account(108655, 4000, "EUR", 3, false))),
                 new User(11156L, "Иван", "Иванов", "Иванович", "02.02.2002", Status.VIP, "qa53zxs1mfg52rr60168", List.of(2, 3, 4, 2, 3, 4, 2),
