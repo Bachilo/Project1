@@ -105,18 +105,35 @@ public class User {
 
     }
 
-    public void less() {
+    public  void less(){
         User user11 = DataService.UserFromData().get(10);
         System.out.println(user11);
     }
-
-    public void get() {
+    public  void get(){
         setId(12346L);
         setFirstName("Gleb");
         setMiddleName("Tor");
         setLastName("Victor");
         setNumber(Collections.singletonList(new Account(45689, 145.87, "RUB", 1, false)));
 
+    }
+
+    public class Client extends User {
+
+        @Override
+        public void less() {
+            User user11 = DataService.UserFromData().get(10);
+            System.out.println(user11);
+        }
+
+        public void get() {
+            setId(12346L);
+            setFirstName("Gleb");
+            setMiddleName("Tor");
+            setLastName("Victor");
+            setNumber(Collections.singletonList(new Account(45689, 145.87, "RUB", 1, false)));
+
+        }
     }
 
 
